@@ -1,110 +1,47 @@
 <!DOCTYPE html>
 
 <html>
+
     <head>
-        <meta charset="UTF-8">
-        <title>Homepage of GitHub user arcallan</title>
-        <style>html{visibility:hidden; opacity:0;}</style>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+
+        <title>Koala</title>
+
+        <link rel="stylesheet" type="text/css" href="koala-style.css"
+
     </head>
+
 
     <body>
 
-        <nav id="navbar">
-            <header id="home-header"><a class="nav-link" id="home-link" href="#home">HOME</a></header>
-            <ul id="nav-list">
-                <li><a class="nav-link" href="#game-of-life">Game of Life</a></li>
-                <li><a class="nav-link" href="#maps">----------</a></li>
-            </ul>
-        </nav>
-
-        <!-- HOME (STARTING) SECTION -->
-        <section class="main-section" id="home">
-            <div class="section-heading" id="gol">
-                <h1>Welcome</h1>
-            </div>
-
-            <div class="spacer"></div>
-
-            <hr class="section-sep">
-        </section>
-
-        <!-- GAME OF LIFE SECTION -->
-        <section class="main-section" id="game-of-life">
-            <div class="section-heading" id="gol">
-                <h1>Conway's Game of Life</h1>
-            </div>
-
+        <div class="koala">
             
-            <div id="game-container">
-                <div id="game-column-left">
-                    <div id="grid-container">
-                        <canvas id="life-grid" width="800" height="600"></canvas>
-                    </div>
-
-                    <div id="button-container">
-                        <input class="gol-button" type="button" value="Start" onclick="start()">
-                        <input class="gol-button" type="button" value="Stop" onclick="stop()">
-                        <input class="gol-button" type="button" value="Step" onclick="oneStep()">
-                        <input class="gol-button" type="button" value="Reset" onclick="reset()">
-                        <input class="gol-button" type="button" value="Random" onclick="initRandom()">
-                    </div>
-
-                    <div id="rules-text-container">
-                        <h2>How life works</h2>
-                        <p>Each cell in the grid is either "alive" (green) or "dead" (white). Every turn of
-                            the game, the status of each cell will update depending on the cells around it.
-                        </p> 
-                        <p>Here are the rules:</p>
-                        <ul class="life-rules">
-                            <li>For "alive" cells:</li>
-                            <ul class="life-rules-sublist">
-                                <li>&ndash; If the cell has 2 or 3 neighbours, it stays alive</li>
-                                <li>&ndash; If the cell has fewer than 2 or more than 3 neighbours, it dies</li>
-                            </ul>
-                            <br>
-                            <li>For "dead" cells:</li>
-                            <ul class="life-rules-sublist">
-                                <li>&ndash; If the cell has exactly 3 neighbours, it comes to life</li>
-                                <li>&ndash; If the cell has fewer than or more than 3 neighbours, it remains dead</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-
-                <div id="game-column-right">
-                    <div id="pop-graph-container">
-                        <canvas id="pop-graph" width="500" height="300"></canvas>
-                    </div>
-
-                    <div id="set-pop-density">
-                        <p>Set Initial Population Density</p>
-                        <label for="low">
-                            <input id="low" type="radio" name="pop-density">low
-                        </label>
-                        <label for="medium">
-                            <input id="medium" type="radio" name="pop-density" checked="checked">medium
-                        </label>
-                        <label for="high">
-                            <input id="high" type="radio" name="pop-density">high
-                        </label>
-                    </div>
-                </div>
+            <div class="ear left-ear">
+                <div class="ear-fur"></div>
+            </div>
+            <div class="ear right-ear">
+                <div class="ear-fur"></div>
             </div>
 
-            <hr class="section-sep">
-        </section>
+            <div class="koala-body"></div>
+            <div class="arm"></div> 
+            <div class="leg"></div>
 
-        <!-- MAPS SECTION -->
-        <section class="main-section" id="maps">
-            <div class="section-heading"><h1></h1></div>
+            <div class="koala-head">
+                <div class="eye left-eye">
+                    <div class="sparkle"></div>
+                </div>
+                <div class="eye right-eye">
+                    <div class="sparkle"></div>
+                </div>
+                <div class="nose"></div>
+            </div>
 
-            <div class="spacer"></div>
+        </div>
 
-        </section>
+
 
     </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-    <script src="gol.js"></script>
-    <link rel="stylesheet" href="main.css">
+
+
+
 </html>
