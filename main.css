@@ -1,154 +1,110 @@
 body {
-    background-color: #8A4747;
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    font-size: 1.1em;
+    background-color: #fd9644;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.koala * {
+    position: absolute;
+    background: var(--koala-fur);
 }
 
-.section-heading {
-    color: white;
-    text-align: center;
+.koala {
+    --koala-fur: #778ca3;
+    position: relative;
     margin: auto;
-    font-size: 2em;
+    display: block;
+    margin-top: 10%;
+    height: 300px;
+    width: 300px
 }
 
-.main-section {
-    padding-bottom: 10em;
-    width: 88%;
-    float: right;
+.koala-head {
+
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 45%;
+    border-radius: 50%;
 }
 
-.spacer {
-    height: 1000px;
+.koala-body {
+    top: 30%;
+    left: 20%;
+    width: 60%;
+    height: 70%;
+    border-radius: 50% 50% 40% 40%;
 }
 
-.section-sep {
-    color: darkgray;
+.arm {
+    top: 50%;
+    left: 50%;
+    width: 45%;
+    height: 20%;
+    border-radius: 40%;
 }
 
-#navbar {
-    height: 100%;
-    width: 12%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-right: 2px solid darkgray;
-    z-index: 1;
-    text-align: center;
-    font-size: 1.5em;
-    overflow-x: hidden;
+.leg {
+    top :80%;
+    left: 40%;
+    width: 50%;
+    height: 20%;
+    border-radius: 40%;
 }
 
-#nav-list {
-    list-style-type: none;
-    padding-left: 0;
+.ear {
+    top: 15%;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
 }
 
-#nav-list li {
-    padding-top: 1em;
+.left-ear {
+    left: 7%;
+
 }
 
-.nav-link {
-    text-decoration: none;
-    color: white;
+.right-ear {
+    left: 63%;
 }
 
-#home-header {
-    padding-top: 2em;
+.ear-fur {
+    background: white;
+    top: 7.5%;
+    left: 7.5%;
+    height: 85%;
+    width: 85%;
+    border-radius: 50%;
 }
 
-#game-container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-bottom: 8em;
+.eye {
+    background: black;
+    top: 30%;
+    height: 15%;
+    width: 10%;
+    border-radius: 50%;
 }
 
-#game-colum-left {
-    width: 25%;
-    margin: 20px;
+.left-eye {
+    left: 15%;
 }
 
-#game-column-right {
-    width: 25%;
-    margin: 20px;
+.right-eye {
+    left: 75%;
 }
 
-#grid-container {
-    margin: auto;
-    text-align: center;
-    padding: 2em;
+.sparkle {
+    background: white;
+    top: 50%;
+    left: 40%;
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
 }
 
-#life-grid {
-    background-color: white;
-    border: 1px solid;
-}
-
-#button-container {
-    margin: auto;
-    text-align: center;
-    padding-bottom: 3em;
-}
-
-#grid-size {
-    margin: auto;
-    text-align: center;
-    color: white;
-    padding: 1em;
-}
-
-#pop-graph-container {
-    margin: auto;
-    text-align: center;
-    padding: 2em;
-    height: 150px;
-    width: 300px;
-}
-
-#pop-graph {
-    background-color: white;
-    border: 1px solid;
-}
-
-.gol-button {
-    height: 1.5em;
-    border-radius: 0px;
-    color: black;
-    background-color: white;
-    transition: .5s;
-    margin: 0.8em;
-    font-size: 1.2em;
-}
-
-.gol-button .text {
-    margin: auto;
-}
-
-#set-pop-density {
-    color: white;
-    padding: 2em;
-}
-
-#rules-text-container {
-    text-align: left;
-    width: 80%;
-    margin: auto;
-}
-
-.life-rules-sublist {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-html {
-    visibility: visible;
-    opacity: 1;
+.nose {
+    background: black;
+    top: 40%;
+    left: 30%;
+    height: 55%;
+    width: 40%;
+    border-radius: 50% 50% 40% 40%;
 }
